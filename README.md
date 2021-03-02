@@ -3,7 +3,7 @@
  
  # Basic Functions:
   Login facility
-    * Search Book Facility
+    *Search Book Facility
     * Borrow or Renew Book facility
     * Return Book Facility
     * Fine Payment Facility
