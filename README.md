@@ -1,4 +1,4 @@
-# CS255-Lib-Management-System
+# CS254-Lib-Management-System
  Database Management System Project
  
  # Basic Functions:
