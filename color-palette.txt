@@ -1,0 +1,1 @@
+colors for the routes: #8F3200, #005D8F, #e5eff3
