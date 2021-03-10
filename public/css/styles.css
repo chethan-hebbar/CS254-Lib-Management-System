@@ -11,12 +11,12 @@ body {
 
 .head-text {
   font-family: 'Oswald', sans-serif;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .text {
   font-family: 'Cardo', serif;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .container-fluid {
@@ -59,4 +59,25 @@ body {
 	margin-top: 25px;
 	font-size: 15px;
   font-family: 'Cardo', sans-serif;
+}
+
+form {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.form-control {
+  width: 200px;
+  margin-left: 665px;
+}
+
+.formTitle {
+  color: white;
+  font-size: 45px;
+}
+
+.formMutedText{
+  font-size: 20px;
+  color: white;
 }

@@ -5,7 +5,17 @@
 </div>
 
 <div class="heading">
-  <h4 class = "text">Enter book ID or get book ID from Search section:</h4>
+  <h4 class = "text">Enter book ID:</h4>
 </div>
+
+<form>
+  <div class="form-group">
+    <label class="formTitle" for="bookID">Book ID</label>
+    <input type="number" class="form-control" id="bookID" placeholder="ID">
+    <small id="bookIdHelp" class="formMutedText">Please get book ID from search section if you don't have it yet</small>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Borrow</button>
+</form>
 
 <%- include("partials/footer") -%>

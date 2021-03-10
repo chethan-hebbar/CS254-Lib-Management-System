@@ -5,6 +5,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
+const mysql = require("mysql");
 
 // setting up express server
 const app = express();
@@ -15,6 +16,14 @@ app.set('view engine', 'ejs');
 // using body-parser to parse through json
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+
+// setting up mysql connection
+const connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : '',
+  database : 'Library_db'
+});
 
 // rendering home page from server
 app.get("/", function(req, res){
