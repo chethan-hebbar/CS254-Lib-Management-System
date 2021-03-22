@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+
+<div class="heading">
+  <h6 class = "text">Please Sign-Up for the library membership!</h6>
+</div>
+
+<form action="/signup" method="post">
+  <div class="form-group">
+    <label class="formTitle" for="username">Sign-Up</label>
+    <input type="text" class="form-control" name="username" id="username" placeholder="username">
+    <input type="text" class="form-control" name="password" id="password" placeholder="password">
+  </div>
+
+  <button type="submit" class="btn btn-primary signup">Sign Up</button>
+</form>
+
+
+
+<%- include("partials/footer") -%>

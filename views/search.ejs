@@ -8,10 +8,10 @@
   <h4 class = "text">Enter author name or title of book:</h4>
 </div>
 
-<form>
+<form action="/search" method="post">
   <div class="form-group">
     <label class="formTitle" for="TitleAuthor">Type in</label>
-    <input type="text" class="form-control" id="TitleAuthor" placeholder="Title or Author">
+    <input type="text" class="form-control" name="searchData" id="TitleAuthor" placeholder="Title or Author">
     <small id="bookIdHelp" class="formMutedText">Rummaging around the library to get your book :)</small>
   </div>
 

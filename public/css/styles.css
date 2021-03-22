@@ -70,6 +70,7 @@ form {
 .form-control {
   width: 200px;
   margin-left: 665px;
+  margin-bottom: 15px;
 }
 
 .formTitle {
@@ -80,4 +81,26 @@ form {
 .formMutedText{
   font-size: 20px;
   color: white;
+}
+
+.result {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h5 {
+  font-size: 40px;
+}
+
+.image {
+  height: 343px;
+  width: 1535px;
+}
+
+.entry {
+  margin-top: 100px;
+  margin-left: 140px;
+  margin-right: 140px;
 }
