@@ -1,13 +1,30 @@
 <%- include("partials/header") -%>
 
-<div class = "heading">
-<h1 class = "head-text">The City Library</h1>
+
+<div class="heading">
+  <h1 class="head-text">The City Library</h1>
 </div>
 
-<div class = "heading">
+<div class="heading">
   <h3 class="text">Welcome to the City Library website</h3>
-  <h3 class = "text">Please choose your service up above!!</h3>
-  <img class="image" src="/images/lib.jpg" alt="library">
+  <h3 class="text">User information</h3>
+
+  <table>
+    <tr>
+      <th>Username</th>
+      <th>Borrowed book ID</th>
+      <th>Borrowed book ID</th>
+    </tr>
+    <% user_info.forEach(function(user){ %>
+      <tr>
+        <td><%=user.user_name%></td>
+        <td><%=user.book1%></td>
+        <td><%=user.book2%></td>
+      </tr>
+    <%  }); %>
+  </table>
+
 </div>
+
 
 <%- include("partials/footer") -%>

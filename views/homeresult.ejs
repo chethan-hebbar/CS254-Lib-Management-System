@@ -1,0 +1,24 @@
+<%- include("partials/header") -%>
+
+<% if(failure === 0){ %>
+  <div class = "heading">
+  <h1 class = "head-text">The City Library</h1>
+  </div>
+
+  <div class = "heading">
+    <h3 class="text">Welcome to the City Library website</h3>
+    <h3 class = "text">Please choose your service up above!!</h3>
+    <img class="image" src="/images/lib.jpg" alt="library">
+  </div>
+
+<% } %>
+
+<% if(failure === 1){ %>
+  <div class="result failure">
+    <h5>Error: Invalid User or User Name taken, please try again</h5>
+    <img class="image" src="/images/error.jpg" alt="error">
+  </div>
+<% } %>
+
+
+<%- include("partials/footer") -%>

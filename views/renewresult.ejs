@@ -1,15 +1,15 @@
 <%- include("partials/header") -%>
 
-<% if(!failure){ %>
+<% if(failure === 0){ %>
  <div class="result success">
      <h5>Book sucessfully renewed, yay!</h5>
      <img class="image" src="/images/lib.jpg" alt="library">
  </div>
 <% } %>
 
-<% if(failure){ %>
+<% if(failure === 1){ %>
   <div class="result failure">
-    <h5>Error: could not complete request, please try again</h5>
+    <h5>Error: bookID was wrong, please try again</h5>
     <img class="image" src="/images/error.jpg" alt="error">
   </div>
 <% } %>

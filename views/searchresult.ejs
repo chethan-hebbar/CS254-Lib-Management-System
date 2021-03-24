@@ -1,21 +1,37 @@
 <%- include("partials/header") -%>
 
- <% if(!failure){ %>
+ <% if(failure === 0){ %>
   <div class="result success">
     <h5>We found the following books</h5>
-    <div class="box">
-    <% books.forEach(function(book){ %>
-      <div class="item">
-        <p><%= book.title  %></p>
-      </div>
-      <% }); %>
-    </div>
-  </div>
-<% } %>
+    <table>
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Edition</th>
+        <th>Publisher</th>
+        <th>Available</th>
+        <th>Date of publication</th>
+      </tr>
+      <% books.forEach(function(book){ %>
+        <tr>
+          <td><%=book.b_id%></td>
+          <td><%=book.title%></td>
+          <td><%=book.author_name%></td>
+          <td><%=book.edition%></td>
+          <td><%=book.publisher%></td>
+          <td><%=book.availability%></td>
+          <td><%=book.published_date%></td>
+        </tr>
+        <% }); %>
+      <% } %>
 
-<% if(failure){ %>
+    </table>
+
+
+<% if(failure === 1){ %>
   <div class="result failure">
-    <h5>Error: could not complete request, please try again</h5>
+    <h5>Error: No such book found, please try again</h5>
     <img class="image" src="/images/error.jpg" alt="error">
   </div>
 <% } %>

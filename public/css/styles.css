@@ -104,3 +104,18 @@ h5 {
   margin-left: 140px;
   margin-right: 140px;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #162B32;
+}
