@@ -1,8 +1,8 @@
 # Library-Management-System
- Database Management System Project
+ Database Management Systems Project
  
  # Basic Functions:
-Login facility
+- Login/SignUp facility
 - Search Book Facility
 - Borrow or Renew Book facility
 - Return Book Facility
