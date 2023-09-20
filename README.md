@@ -1,5 +1,5 @@
 # Library-Management-System
- Database Management Systems Project
+ Database Management System Project
  
  # Basic Functions:
 - Login/SignUp facility
